@@ -2,7 +2,7 @@ TARGET := iphone:clang:latest:11.2
 
 include $(THEOS)/makefiles/common.mk
 
-ARCHS = arm64 arm64e
+ARCHS = arm64
 
 BUNDLE_NAME = bfdecrypt
 
