@@ -1,4 +1,4 @@
-TARGET := iphone:clang:13.5:12.0
+TARGET := iphone:clang:12.4:7.0
 GO_EASY_ON_ME = 1
 
 ARCHS = arm64 arm64e
