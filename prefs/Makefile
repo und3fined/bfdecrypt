@@ -6,6 +6,7 @@ ARCHS = arm64
 
 BUNDLE_NAME = bfdecrypt
 
+$(BUNDLE_NAME)_FILES = bfdRootListController.m
 $(BUNDLE_NAME)_FRAMEWORKS = UIKit
 $(BUNDLE_NAME)_PRIVATE_FRAMEWORKS = Preferences
 $(BUNDLE_NAME)_INSTALL_PATH = /var/jb/Library/PreferenceBundles
