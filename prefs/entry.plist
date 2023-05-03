@@ -5,17 +5,32 @@
 	<key>entry</key>
 	<dict>
 		<key>bundle</key>
-		<string>bfdecrypt</string>
+		<string>AltList</string>
 		<key>cell</key>
-		<string>PSLinkCell</string>
+		<string>PSLinkListCell</string>
+		<key>defaults</key>
+		<string>dev.und3fy.bfdecrypt</string>
 		<key>detail</key>
-		<string>bfdRootListController</string>
+		<string>ATLApplicationListMultiSelectionController</string>
 		<key>icon</key>
-		<string>Card.png</string>
+		<string>Icon.png</string>
 		<key>isController</key>
 		<true/>
+		<key>key</key>
+		<string>selectedApplications</string>
 		<key>label</key>
 		<string>bfdecrypt</string>
+		<key>overridePrincipalClass</key>
+		<true/>
+		<key>sections</key>
+		<array>
+			<dict>
+				<key>sectionType</key>
+				<string>Visible</string>
+			</dict>
+		</array>
+		<key>useSearchBar</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
