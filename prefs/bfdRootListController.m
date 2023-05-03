@@ -36,8 +36,8 @@ void reloadPreferences()
 
     @try
     {
-        [filterDict writeToFile:@"/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
-        [filterDict writeToFile:@"/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
+        [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
+        [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
     }
     @catch(id anException) {
         NSLog(@"[bfdecryptPrefs] Error writing preferences");
