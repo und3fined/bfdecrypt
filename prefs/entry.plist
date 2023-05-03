@@ -19,7 +19,7 @@
 		<key>key</key>
 		<string>selectedApplications</string>
 		<key>label</key>
-		<string>bfdecrypt</string>
+		<string>Decrypt</string>
 		<key>overridePrincipalClass</key>
 		<true/>
 		<key>sections</key>
