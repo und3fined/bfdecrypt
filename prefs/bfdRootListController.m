@@ -18,7 +18,7 @@ void ShowAlert(NSString *msg, NSString *title) {
 
 void reloadPreferences()
 {
-	NSDictionary *preferences = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.level3tjg.bfdecrypt.plist"];
+	NSDictionary *preferences = [NSDictionary dictionaryWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"];
     NSMutableArray *bundles = [[NSMutableArray alloc] init];
 
     for (NSString *key in preferences) {
@@ -61,5 +61,5 @@ __attribute__((constructor))
 static void init(void)
 {
 	reloadPreferences();
-	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)reloadPreferences, CFSTR("com.level3tjg.bfdecrypt.settingschanged"), NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
+	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)reloadPreferences, CFSTR("dev.und3fy.bfdecrypt.settingschanged"), NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }

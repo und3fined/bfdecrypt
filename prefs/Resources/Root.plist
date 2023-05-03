@@ -14,13 +14,13 @@
 			<key>ALAllowsSelection</key>
 			<string>1</string>
 			<key>ALChangeNotification</key>
-			<string>com.level3tjg.bfdecrypt.settingschanged</string>
+			<string>dev.und3fy.bfdecrypt.settingschanged</string>
 			<key>ALSettingsDefaultValue</key>
 			<string>0</string>
 			<key>ALSettingsKeyPrefix</key>
 			<string></string>
 			<key>ALSettingsPath</key>
-			<string>/var/mobile/Library/Preferences/com.level3tjg.bfdecrypt.plist</string>
+			<string>/var/jb/var/mobile/Library/Preferences/dev.und3fy.level3tjg.bfdecrypt.plist</string>
 			<key>ALSingleEnabledMode</key>
 			<false/>
 			<key>bundle</key>
