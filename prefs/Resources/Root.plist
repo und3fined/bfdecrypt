@@ -8,7 +8,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>bfdecrypt Application List</string>
+			<string>Applications</string>
 		</dict>
 		<dict>
 			<key>ALAllowsSelection</key>
@@ -30,7 +30,7 @@
 			<key>isController</key>
 			<string>1</string>
 			<key>label</key>
-			<string>bfdecrypt enabled applications</string>
+			<string>Enabled applications</string>
 		</dict>
 		<dict>
 			<key>cell</key>

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>bfdecrypt</string>
 	<key>CFBundleIdentifier</key>
-	<string>dev.und3fybfdecrypt</string>
+	<string>dev.und3fy.bfdecrypt</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
