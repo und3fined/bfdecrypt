@@ -20,11 +20,11 @@
 			<key>ALSettingsKeyPrefix</key>
 			<string></string>
 			<key>ALSettingsPath</key>
-			<string>/var/jb/var/mobile/Library/Preferences/dev.und3fy.level3tjg.bfdecrypt.plist</string>
+			<string>/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist</string>
 			<key>ALSingleEnabledMode</key>
 			<false/>
 			<key>bundle</key>
-			<string>AppList</string>
+			<string>AltList</string>
 			<key>cell</key>
 			<string>PSLinkCell</string>
 			<key>isController</key>
