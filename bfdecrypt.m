@@ -30,7 +30,7 @@ UIAlertController *errorController = NULL;
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
     
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    NSNumber *value = [[[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"] objectForKey:bundleID];
+    NSNumber *value = [[[NSDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"] objectForKey:bundleID];
     if ([value boolValue] == YES) {
         NSLog(@"[bfdecrypt] Spawning thread to do decryption in the background...");
         

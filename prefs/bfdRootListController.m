@@ -18,7 +18,7 @@ void ShowAlert(NSString *msg, NSString *title) {
 
 void reloadPreferences()
 {
-	NSDictionary *preferences = [NSDictionary dictionaryWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"];
+	NSDictionary *preferences = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"];
     NSMutableArray *bundles = [[NSMutableArray alloc] init];
 
     for (NSString *key in preferences) {

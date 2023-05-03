@@ -20,7 +20,7 @@
 			<key>ALSettingsKeyPrefix</key>
 			<string></string>
 			<key>ALSettingsPath</key>
-			<string>/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist</string>
+			<string>/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist</string>
 			<key>ALSingleEnabledMode</key>
 			<false/>
 			<key>bundle</key>
