@@ -1,7 +1,7 @@
 TARGET := iphone:clang:12.4:7.0
 GO_EASY_ON_ME = 1
 
-ARCHS = arm64 arm64e
+ARCHS = arm64
 
 BFINJECT_SRC=DumpDecrypted.m bfdecrypt.m
 MINIZIP_SRC=SSZipArchive/minizip/crypt.c \
@@ -32,5 +32,6 @@ $(TWEAK_NAME)_FRAMEWORKS += CoreFoundation IOKit Foundation JavaScriptCore UIKit
 #$(TWEAK_NAME)_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+
 SUBPROJECTS += prefs
 include $(THEOS_MAKE_PATH)/aggregate.mk
