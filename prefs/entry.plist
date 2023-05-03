@@ -19,7 +19,7 @@
 		<key>key</key>
 		<string>selectedApplications</string>
 		<key>label</key>
-		<string>Decrypt</string>
+		<string>1Decrypt</string>
 		<key>overridePrincipalClass</key>
 		<true/>
 		<key>sections</key>
