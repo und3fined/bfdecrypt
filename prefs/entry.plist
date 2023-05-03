@@ -13,7 +13,7 @@
 		<key>detail</key>
 		<string>ATLApplicationListMultiSelectionController</string>
 		<key>icon</key>
-		<string>Icon.png</string>
+		<string>Card.png</string>
 		<key>isController</key>
 		<true/>
 		<key>key</key>
