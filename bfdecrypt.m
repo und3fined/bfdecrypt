@@ -187,7 +187,5 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         }); // dispatch in background
         
         NSLog(@"[bfdecrypt] All done, exiting constructor.");
-        
-        
     }
 }
