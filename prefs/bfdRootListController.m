@@ -61,5 +61,5 @@ __attribute__((constructor))
 static void init(void)
 {
 	reloadPreferences();
-	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)reloadPreferences, CFSTR("com.level3tjg.bfdecrypt.settingschanged"), NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
+	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)reloadPreferences, CFSTR("dev.und3fy.bfdecrypt.settingschanged"), NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }
