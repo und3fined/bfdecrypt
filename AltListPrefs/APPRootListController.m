@@ -12,7 +12,7 @@ void reloadPreferences()
 
 	for (NSString *key in selectedApplications) {
 		if ([[preferences objectForKey:key] boolValue] == YES) {
-				[bundles addObject:key];
+			[bundles addObject:key];
 		}
 	}
 
