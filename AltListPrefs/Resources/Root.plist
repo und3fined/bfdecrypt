@@ -242,6 +242,20 @@
 			<key>hideAlphabeticSectionHeaders</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>action</key>
+			<string>syncSelectedApplications</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Sync</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2023 Decrypt.day (und3fy)</string>
+		</dict>
 	</array>
 	<key>title</key>
 	<string>1 Decrypt</string>
