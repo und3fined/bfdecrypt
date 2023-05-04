@@ -37,7 +37,7 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         return;
     }
 
-    NSArray *selectedApplications = [prefs objectForKey:@"selectedApplications"];
+    NSDictionary *selectedApplications = [prefs objectForKey:@"selectedApplications"];
     NSNumber *value = 0;
     for (NSString *key in selectedApplications) {
         if ([key isEqualToString:bundleID]) {
