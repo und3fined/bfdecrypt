@@ -13,13 +13,13 @@
 		<key>detail</key>
 		<string>ATLApplicationListMultiSelectionController</string>
 		<key>icon</key>
-		<string>Card.png</string>
+		<string>icon.png</string>
 		<key>isController</key>
 		<true/>
 		<key>key</key>
 		<string>selectedApplications</string>
 		<key>label</key>
-		<string>1Decrypt</string>
+		<string>1 Decrypt</string>
 		<key>overridePrincipalClass</key>
 		<true/>
 		<key>sections</key>

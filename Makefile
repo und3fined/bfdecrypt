@@ -33,5 +33,5 @@ $(TWEAK_NAME)_FRAMEWORKS += CoreFoundation IOKit Foundation JavaScriptCore UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
-SUBPROJECTS += AltListPrefs
+SUBPROJECTS += prefs
 include $(THEOS_MAKE_PATH)/aggregate.mk
