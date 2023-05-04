@@ -287,7 +287,7 @@
 			<key>useSearchBar</key>
 			<true/>
 			<key>localizationBundlePath</key>
-			<string>/Library/Application Support/AltListPrefs.bundle</string>
+			<string>/var/jb/Library/Application Support/AltListPrefs.bundle</string>
 		</dict>
 		<dict>
 			<key>cell</key>
