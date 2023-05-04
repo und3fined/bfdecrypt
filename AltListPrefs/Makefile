@@ -8,7 +8,7 @@ BUNDLE_NAME = AltListPrefs
 AltListPrefs_FILES = APPRootListController.m
 AltListPrefs_FRAMEWORKS = UIKit
 AltListPrefs_PRIVATE_FRAMEWORKS = Preferences
-AltListPrefs_EXTRA_FRAMEWORKS = AltList
+# AltListPrefs_EXTRA_FRAMEWORKS = AltList
 AltListPrefs_INSTALL_PATH = /Library/PreferenceBundles
 AltListPrefs_CFLAGS = -fobjc-arc
 
