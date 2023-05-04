@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>AltListTestPreferences</string>
+	<string>AltListPrefs</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.opa334.altlisttestpreferences</string>
+	<string>dev.und3fy.bfdecrypt_prefs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

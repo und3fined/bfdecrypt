@@ -14,7 +14,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 1</string>
 			<key>detail</key>
@@ -39,7 +39,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 2</string>
 			<key>detail</key>
@@ -76,7 +76,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 3</string>
 			<key>detail</key>
@@ -109,7 +109,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 4</string>
 			<key>detail</key>
@@ -142,7 +142,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 5</string>
 			<key>detail</key>
@@ -167,7 +167,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 6</string>
 			<key>detail</key>
@@ -192,7 +192,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 7</string>
 			<key>detail</key>
@@ -221,7 +221,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Test 7.5</string>
 			<key>detail</key>
@@ -254,7 +254,7 @@
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt</string>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
 			<key>label</key>
 			<string>Custom Type + Localization</string>
 			<key>detail</key>
