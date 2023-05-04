@@ -29,6 +29,114 @@
 				</dict>
 			</array>
 			<key>showIdentifiersAsSubtitle</key>
+			<false/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Test 4</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>System</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>User</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>Hidden</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Test 5</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>All</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Test 6</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Test 7</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
 			<true/>
 			<key>defaultApplicationSwitchValue</key>
 			<false/>
@@ -38,6 +146,101 @@
 			<true/>
 			<key>hideAlphabeticSectionHeaders</key>
 			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Test 7.5</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>Hidden</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+			<key>alphabeticIndexingEnabled</key>
+			<true/>
+			<key>hideAlphabeticSectionHeaders</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<key>label</key>
+			<string>Custom Type + Localization</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Custom</string>
+					<key>sectionName</key>
+					<string>Supports Multiple Windows</string>
+					<key>sectionPredicate</key>
+					<string>supportsMultiwindow == YES</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>Custom</string>
+					<key>sectionName</key>
+					<string>Supports Multiple Windows</string>
+					<key>sectionPredicate</key>
+					<string>supportsMultiwindow == NO</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+			<key>localizationBundlePath</key>
+			<string>/var/jb/Library/Application Support/AltListPrefs.bundle</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>label</key>
+			<string>Test 8</string>
+			<key>detail</key>
+			<string>ATLApplicationListSubcontrollerController</string>
+			<key>sections</key>
+			<array>
+			<dict>
+				<key>sectionType</key>
+				<string>Visible</string>
+			</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>useSearchBar</key>
+			<true/>
+			<key>alphabeticIndexingEnabled</key>
+			<true/>
+			<key>hideAlphabeticSectionHeaders</key>
+			<true/>
 		</dict>
 	</array>
 	<key>title</key>
