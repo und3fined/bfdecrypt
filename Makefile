@@ -29,7 +29,7 @@ $(TWEAK_NAME)_FILES = bfdecrypt.m DumpDecrypted.m $(MINIZIP_SRC) $(SSZIPARCHIVE_
 # 
 $(TWEAK_NAME)_CFLAGS = -fobjc-arc -I SSZipArchive -I SSZipArchive/minizip
 $(TWEAK_NAME)_FRAMEWORKS += CoreFoundation IOKit Foundation JavaScriptCore UIKit Security CFNetwork CoreGraphics
-$(TWEAK_NAME)_LIBRARIES = AltList
+# $(TWEAK_NAME)_LIBRARIES = AltList
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
