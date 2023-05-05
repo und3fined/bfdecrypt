@@ -39,6 +39,10 @@
 			<key>useSearchBar</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
     <dict>
 			<key>action</key>
 			<string>syncSelectedApps</string>
@@ -46,6 +50,10 @@
 			<string>PSButtonCell</string>
 			<key>label</key>
 			<string>Sync Selected Apps</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 		</dict>
 		<dict>
 			<key>cell</key>
