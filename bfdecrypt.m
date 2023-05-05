@@ -28,7 +28,8 @@ UIAlertController *errorController = NULL;
 
 // The dylib constructor sets decryptedIPAPath, spawns a thread to do the app decryption, then exits.
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
-    
+    NSLog(@"[bfdecrypt] Constructor called");
+
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
     NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
