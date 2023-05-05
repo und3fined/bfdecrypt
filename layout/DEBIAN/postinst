@@ -1,4 +1,6 @@
 #!/bin/sh
 
 chown mobile:wheel /var/jb/usr/lib/TweakInject/bfdecrypt.plist
+chown mobile:wheel /var/jb/usr/lib/TweakInject/bfdecrypt_fromprefs.plist
 chmod 644 /var/jb/usr/lib/TweakInject/bfdecrypt.plist
+chmod 644 /var/jb/usr/lib/TweakInject/bfdecrypt_fromprefs.plist

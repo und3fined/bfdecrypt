@@ -30,21 +30,21 @@ UIAlertController *errorController = NULL;
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSLog(@"[bfdecrypt] Constructor called");
 
-    // NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    // NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
+    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+    NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
-    // NSLog(@"[bfdecrypt] bundleID: %@", bundleID);
+    NSLog(@"[bfdecrypt] bundleID: %@", bundleID);
 
-    // NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
-    // NSNumber *value = [NSNumber numberWithBool:NO];
-    // for (NSString *key in includedApps) {
-    //     if ([key isEqualToString:bundleID]) {
-    //         value = [NSNumber numberWithBool:YES];
-    //         break;
-    //     }
-    // }
+    NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
+    NSNumber *value = [NSNumber numberWithBool:NO];
+    for (NSString *key in includedApps) {
+        if ([key isEqualToString:bundleID]) {
+            value = [NSNumber numberWithBool:YES];
+            break;
+        }
+    }
 
-    // if ([value boolValue] == YES) {
+    if ([value boolValue] == YES) {
         NSLog(@"[bfdecrypt] Spawning thread to do decryption in the background...");
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{        
@@ -59,7 +59,6 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
             NSLog(@"[bfdecrypt] Full path to app: %s   ///   IPA File: %@", fullPathStr, [dd IPAPath]);
 
             dispatch_async(dispatch_get_main_queue(), ^{
-                //UIWindow *originalWindow = [[UIApplication sharedApplication] keyWindow];
                 UIWindow *originalWindow = [[[UIApplication sharedApplication] delegate] window];
                 alertWindow = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
                 alertWindow.rootViewController = [UIViewController new];
@@ -200,5 +199,5 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         }); // dispatch in background
         
         NSLog(@"[bfdecrypt] All done, exiting constructor.");
-    // }
+    }
 }

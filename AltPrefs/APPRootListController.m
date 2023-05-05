@@ -54,8 +54,7 @@ void ShowAlert(NSString *msg, NSString *title) {
   };
 
   @try {
-    [filterDict writeToFile:@"/var/jb/usr/lib/TweakInject/bfdecrypt.plist" atomically:YES];
-
+    [filterDict writeToFile:@"/var/jb/usr/lib/TweakInject/bfdecrypt.plist" atomically:NO];
     // trigger update TweakInject
     [filterDict writeToFile:@"/var/jb/usr/lib/TweakInject/bfdecrypt_fromprefs.plist" atomically:NO];
     // remove bfdecrypt_fromprefs.plist
