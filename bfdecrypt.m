@@ -38,15 +38,15 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
     }
 
     NSArray *selectedApplications = [prefs objectForKey:@"selectedApplications"];
-    NSNumber *value = 0;
+    bool value = NO;
     for (NSString *key in selectedApplications) {
         if ([key isEqualToString:bundleID]) {
-            value = 1;
+            value = YES;
             break;
         }
     }
 
-    if ([value boolValue] == YES) {
+    if (value == YES) {
         NSLog(@"[bfdecrypt] Spawning thread to do decryption in the background...");
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{        
