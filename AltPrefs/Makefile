@@ -8,7 +8,7 @@ BUNDLE_NAME = bfdecryptPrefs
 bfdecryptPrefs_FILES = APPRootListController.m
 bfdecryptPrefs_FRAMEWORKS = UIKit
 bfdecryptPrefs_PRIVATE_FRAMEWORKS = Preferences
-bfdecryptPrefs_EXTRA_FRAMEWORKS = AltList
+# bfdecryptPrefs_EXTRA_FRAMEWORKS = AltList
 bfdecryptPrefs_INSTALL_PATH = /Library/PreferenceBundles
 bfdecryptPrefs_CFLAGS = -fobjc-arc
 
