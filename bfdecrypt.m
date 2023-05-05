@@ -42,7 +42,7 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSNumber *value = [NSNumber numberWithBool:NO];
     for (NSString *key in includedApps) {
         if ([key isEqualToString:bundleID]) {
-            value = [NSNumber numberWithBool:YES]
+            value = [NSNumber numberWithBool:YES];
             break;
         }
     }
