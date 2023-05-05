@@ -51,7 +51,7 @@ void ShowAlert(NSString *msg, NSString *title) {
     @"Filter": @{
       @"Bundles": bundles
     }
-  }
+  };
 
   @try {
     [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
