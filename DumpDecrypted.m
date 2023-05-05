@@ -58,14 +58,16 @@
 	if(!self) {
 		self = [super init];
 	}
+
 	[self setAppPath:[pathToBinary stringByDeletingLastPathComponent]];
 
-    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 
-    NSDictionary *pathAttrs = [[NSFileManager defaultManager] attributesOfItemAtPath:docPath error:nil];
-    NSLog(@"[dumpDecrypted] docPath: %@", docPath);
+	NSDictionary *pathAttrs = [[NSFileManager defaultManager] attributesOfItemAtPath:docPath error:nil];
+	NSLog(@"[dumpDecrypted] docPath: %@", docPath);
+
 	if (pathAttrs) {
-    	NSLog(@"[dumpDecrypted] pathAttrs: %@", [[[NSString stringWithFormat:@"%@", pathAttrs] stringByReplacingOccurrencesOfString:@"\n" withString:@""] stringByReplacingOccurrencesOfString:@"    " withString:@" "]);
+		NSLog(@"[dumpDecrypted] pathAttrs: %@", [[[NSString stringWithFormat:@"%@", pathAttrs] stringByReplacingOccurrencesOfString:@"\n" withString:@""] stringByReplacingOccurrencesOfString:@"    " withString:@" "]);
 	}
 	[self setDocPath:docPath];
     
