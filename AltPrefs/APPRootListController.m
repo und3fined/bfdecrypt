@@ -35,11 +35,11 @@ void ShowAlert(NSString *msg, NSString *title) {
 }
 
 -(void)syncSelectedApps {
-  [self reloadPreferences:nil]
+  [self reloadPreferences:nil];
 }
 
 -(void)reloadPreferences:(NSNotification *)notification {
-  NSDictionary *prefs = [NSDictionary dictionaryWithContentsOfFile:kbfdecryptPrefsPlistPath];
+  NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
   NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
   NSMutableArray *bundles = [[NSMutableArray alloc] init];
 
