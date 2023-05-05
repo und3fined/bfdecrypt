@@ -41,7 +41,7 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSNumber *value = 0;
     for (NSString *key in selectedApplications) {
         if ([key isEqualToString:bundleID]) {
-            value = [selectedApplications objectForKey:key]
+            value = [selectedApplications objectForKey:key];
             break;
         }
     }
