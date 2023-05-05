@@ -34,7 +34,7 @@
 		<key>overridePrincipalClass</key>
 		<true/>
 		<key>label</key>
-		<string>Applications</string>
+		<string>1 Decrypt</string>
 		<key>useSearchBar</key>
 		<true/>
 	</dict>
