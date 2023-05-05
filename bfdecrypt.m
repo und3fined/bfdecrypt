@@ -37,11 +37,11 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         return;
     }
 
-    NSDictionary *selectedApplications = [prefs objectForKey:@"selectedApplications"];
+    NSArray *selectedApplications = [prefs objectForKey:@"selectedApplications"];
     NSNumber *value = 0;
     for (NSString *key in selectedApplications) {
         if ([key isEqualToString:bundleID]) {
-            value = [selectedApplications objectForKey:key];
+            value = 1;
             break;
         }
     }
