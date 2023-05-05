@@ -35,32 +35,32 @@ void ShowAlert(NSString *msg, NSString *title) {
 }
 
 -(void)syncSelectedApps {
-  [self reloadPreferences:nil];
+  // [self reloadPreferences:nil];
 }
 
 -(void)reloadPreferences:(NSNotification *)notification {
-  NSDictionary prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.level3tjg.bfdecrypt.plist"];
-  NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
-  NSMutableArray *bundles = [[NSMutableArray alloc] init];
+  // NSDictionary prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
+  // NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
+  // NSMutableArray *bundles = [[NSMutableArray alloc] init];
 
-  for (NSString *key in includedApps) {
-    [bundles addObject:key];
-  }
+  // for (NSString *key in includedApps) {
+  //   [bundles addObject:key];
+  // }
 
-  NSDictionary *filterDict = @{
-    @"Filter": @{
-      @"Bundles": bundles
-    }
-  };
+  // NSDictionary *filterDict = @{
+  //   @"Filter": @{
+  //     @"Bundles": bundles
+  //   }
+  // };
 
-  @try {
-    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
-    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
-  }
-  @catch(id anException) {
-    NSLog(@"[bfdecryptPrefs] Error writing preferences");
-    ShowAlert(@"Error writing preferences", @"Error");
-  }
+  // @try {
+  //   [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
+  //   [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
+  // }
+  // @catch(id anException) {
+  //   NSLog(@"[bfdecryptPrefs] Error writing preferences");
+  //   ShowAlert(@"Error writing preferences", @"Error");
+  // }
 }
 
 @end

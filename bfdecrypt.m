@@ -31,8 +31,7 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSLog(@"[bfdecrypt] Constructor called");
 
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    NSDictionary prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.level3tjg.bfdecrypt.plist"];
-  
+    NSDictionary prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
     NSLog(@"[bfdecrypt] bundleID: %@", bundleID);
 
