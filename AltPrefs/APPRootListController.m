@@ -39,7 +39,7 @@ void ShowAlert(NSString *msg, NSString *title) {
 }
 
 -(void)reloadPreferences:(NSNotification *)notification {
-  NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
+  NSDictionary *prefs = [[NSDictionary alloc] dictionaryWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
   NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
   NSMutableArray *bundles = [[NSMutableArray alloc] init];
 
