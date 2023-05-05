@@ -1,4 +1,4 @@
 #!/bin/sh
 
-chown mobile:wheel /var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist
-chmod 644 /var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist
+# chown mobile:wheel /var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist
+# chmod 644 /var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist

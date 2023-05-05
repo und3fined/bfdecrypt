@@ -54,6 +54,7 @@ void ShowAlert(NSString *msg, NSString *title) {
   };
 
   @try {
+    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
     [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
   }
   @catch(id anException) {
