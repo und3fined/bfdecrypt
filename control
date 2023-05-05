@@ -3,7 +3,7 @@ Name: bfdecrypt
 Version: 1.3.3-2
 Architecture: iphoneos-arm64
 Description: bfdecrypt for iOS 15/16 rootless
-Depends: firmware (>=11.0), preferenceloader, AltList
+Depends: firmware (>=11.0), preferenceloader, com.opa334.altlist
 Maintainer: und3fy <me@und3fy.dev>
 Author: p0358
 Section: System
