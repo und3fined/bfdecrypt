@@ -54,12 +54,12 @@ void ShowAlert(NSString *msg, NSString *title) {
   };
 
   @try {
-    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:YES];
+    [filterDict writeToFile:@"/var/jb/usr/lib/TweakInject/bfdecrypt.plist" atomically:YES];
 
     // trigger update TweakInject
-    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" atomically:NO];
+    [filterDict writeToFile:@"/var/jb/usr/lib/TweakInject/bfdecrypt_fromprefs.plist" atomically:NO];
     // remove bfdecrypt_fromprefs.plist
-    [[NSFileManager defaultManager] removeItemAtPath:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt_fromprefs.plist" error:nil];
+    [[NSFileManager defaultManager] removeItemAtPath:@"/var/jb/usr/lib/TweakInject/bfdecrypt_fromprefs.plist" error:nil];
   }
   @catch(id anException) {
     NSLog(@"[bfdecryptPrefs] Error writing preferences");
