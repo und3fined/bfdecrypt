@@ -10,7 +10,7 @@
 			<key>label</key>
 			<string>Select</string>
 		</dict>
-		<dict>
+    <dict>
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
@@ -18,118 +18,19 @@
 			<key>label</key>
 			<string>Applications</string>
 			<key>detail</key>
-			<string>ATLApplicationListControllerBase</string>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>key</key>
+			<string>selectedApplications</string>
 			<key>sections</key>
 			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>System</string>
-				</dict>
 				<dict>
 					<key>sectionType</key>
 					<string>User</string>
 				</dict>
 				<dict>
 					<key>sectionType</key>
-					<string>Hidden</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 2</string>
-			<key>detail</key>
-			<string>ATLApplicationListSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationFromTest2</string>
-			<key>cellClass</key>
-			<string>ATLApplicationSelectionCell</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
 					<string>System</string>
 				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>User</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>Hidden</string>
-				</dict>
-			</array>
-			<key>useSearchBar</key>
-			<true/>
-			<key>hideSearchBarWhileScrolling</key>
-			<true/>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>includeIdentifiersInSearch</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 3</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>System</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>User</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>Hidden</string>
-				</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<false/>
-			<key>defaultApplicationSwitchValue</key>
-			<true/>
-			<key>useSearchBar</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 4</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>System</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>User</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>Hidden</string>
-				</dict>
 			</array>
 			<key>showIdentifiersAsSubtitle</key>
 			<true/>
@@ -138,140 +39,19 @@
 			<key>useSearchBar</key>
 			<true/>
 		</dict>
-		<dict>
+    <dict>
+			<key>action</key>
+			<string>syncSelectedApps</string>
 			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
+			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Test 5</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>All</string>
-				</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>defaultApplicationSwitchValue</key>
-			<false/>
-			<key>useSearchBar</key>
-			<true/>
+			<string>Sync Selected Apps</string>
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 6</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>Visible</string>
-				</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>defaultApplicationSwitchValue</key>
-			<false/>
-			<key>useSearchBar</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 7</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>Visible</string>
-				</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>defaultApplicationSwitchValue</key>
-			<false/>
-			<key>useSearchBar</key>
-			<true/>
-			<key>alphabeticIndexingEnabled</key>
-			<true/>
-			<key>hideAlphabeticSectionHeaders</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>dev.und3fy.bfdecrypt_prefs</string>
-			<key>label</key>
-			<string>Test 7.5</string>
-			<key>detail</key>
-			<string>ATLApplicationListMultiSelectionController</string>
-			<key>key</key>
-			<string>selectedApplicationsFromTest3</string>
-			<key>sections</key>
-			<array>
-				<dict>
-					<key>sectionType</key>
-					<string>Visible</string>
-				</dict>
-				<dict>
-					<key>sectionType</key>
-					<string>Hidden</string>
-				</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>defaultApplicationSwitchValue</key>
-			<false/>
-			<key>useSearchBar</key>
-			<true/>
-			<key>alphabeticIndexingEnabled</key>
-			<true/>
-			<key>hideAlphabeticSectionHeaders</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>label</key>
-			<string>Test 8</string>
-			<key>detail</key>
-			<string>ATLApplicationListSubcontrollerController</string>
-			<key>sections</key>
-			<array>
-			<dict>
-				<key>sectionType</key>
-				<string>Visible</string>
-			</dict>
-			</array>
-			<key>showIdentifiersAsSubtitle</key>
-			<true/>
-			<key>useSearchBar</key>
-			<true/>
-			<key>alphabeticIndexingEnabled</key>
-			<true/>
-			<key>hideAlphabeticSectionHeaders</key>
-			<true/>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2019-2023 Lars Fröder (opa334)</string>
 		</dict>
 	</array>
 	<key>title</key>
