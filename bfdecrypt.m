@@ -49,7 +49,7 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{        
             NSLog(@"[bfdecrypt] Inside decryption thread");
-            const char *fullPathStr = _dyld_get_image_name(1);
+            const char *fullPathStr = _dyld_get_image_name(0);
             DumpDecrypted *dd = [[DumpDecrypted alloc] initWithPathToBinary:[NSString stringWithUTF8String:fullPathStr]];
             if(!dd) {
                 NSLog(@"[bfdecrypt] ERROR: failed to get DumpDecrypted instance");
