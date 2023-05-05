@@ -30,7 +30,7 @@ UIAlertController *errorController = NULL;
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
     
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt.plist"];
+    NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
     if (prefs == nil) {
         NSLog(@"[bfdecrypt] ERROR: Failed to read preferences file");

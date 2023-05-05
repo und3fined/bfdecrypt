@@ -1,4 +1,5 @@
 #include "APPRootListController.h"
+#import <UIKit/UIKit.h>
 
 @implementation APPRootListController
 
@@ -18,13 +19,47 @@ void ShowAlert(NSString *msg, NSString *title) {
     [[[[[UIApplication sharedApplication] delegate] window] rootViewController] presentViewController:alert animated:YES completion:nil];
 }
 
-
 - (NSArray *)specifiers {
 	if (!_specifiers) {
 		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
 	}
 
 	return _specifiers;
+}
+
+-(instancetype)init {
+	self = [super init];
+  [self reloadPreferences:nil];
+
+  return self;
+}
+
+-(void)syncSelectedApps {
+  [self reloadPreferences:nil]
+}
+
+-(void)reloadPreferences:(NSNotification *)notification {
+  NSDictionary *prefs = [NSDictionary dictionaryWithContentsOfFile:kbfdecryptPrefsPlistPath];
+  NSArray *includedApps = [prefs objectForKey:@"selectedApplications"];
+  NSMutableArray *bundles = [[NSMutableArray alloc] init];
+
+  for (NSString *key in includedApps) {
+    [bundles addObject:key];
+  }
+
+  NSDictionary *filterDict = @{
+    @"Filter": @{
+      @"Bundles": bundles
+    }
+  }
+
+  @try {
+    [filterDict writeToFile:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/bfdecrypt.plist" atomically:NO];
+  }
+  @catch(id anException) {
+    NSLog(@"[bfdecryptPrefs] Error writing preferences");
+    ShowAlert(@"Error writing preferences", @"Error");
+  }
 }
 
 @end
