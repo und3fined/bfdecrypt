@@ -30,7 +30,8 @@ UIAlertController *errorController = NULL;
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSLog(@"[bfdecrypt] Constructor called");
 
-    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+    NSBundle *mainBundle = [[NSBundle mainBundle]];
+    NSString *bundleID = mainBundle.bundleIdentifier;
     NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
     NSLog(@"[bfdecrypt] bundleID: %@", bundleID);
@@ -49,8 +50,13 @@ __attribute__ ((constructor)) static void bfinject_rocknroll() {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{        
             NSLog(@"[bfdecrypt] Inside decryption thread");
-            const char *fullPathStr = _dyld_get_image_name(0);
-            DumpDecrypted *dd = [[DumpDecrypted alloc] initWithPathToBinary:[NSString stringWithUTF8String:fullPathStr]];
+
+            // ipaName is bundleID and Version (e.g. com.apple.mobilesafari_14.0.1)
+            NSString *ipaName = [NSString stringWithFormat:@"%@_%@", mainBundle.bundleIdentifier, mainBundle.infoDictionary[@"CFBundleShortVersionString"]];
+            NSString *excutablePath = mainBundle.executablePath;
+            const char *fullPathStr = [excutablePath UTF8String];
+
+            DumpDecrypted *dd = [[DumpDecrypted alloc] initWithPathToBinary:[NSString stringWithUTF8String:fullPathStr] ipaName:ipaName];
             if(!dd) {
                 NSLog(@"[bfdecrypt] ERROR: failed to get DumpDecrypted instance");
                 return;

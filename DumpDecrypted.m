@@ -54,7 +54,7 @@
 @implementation DumpDecrypted
 
 
--(id) initWithPathToBinary:(NSString *)pathToBinary {
+-(id) initWithPathToBinary:(NSString *)pathToBinary ipaName:(NSString *)ipaName {
 	if(!self) {
 		self = [super init];
 	}
@@ -76,6 +76,7 @@
 	lastPartOfAppPath = strrchr(lastPartOfAppPath, '/') + 1;
 	NSLog(@"[dumpDecrypted] init: appDirName: %s", lastPartOfAppPath);
 	self->appDirName = strdup(lastPartOfAppPath);
+	self->ipaName = strdup([ipaName UTF8String]);
 
 	return self;
 }
@@ -336,10 +337,6 @@
 	return [NSString stringWithFormat:@"%@/decrypted-app-temp.ipa", [self docPath]];
 }
 
--(NSString *)FinalIPAPath {
-	return [NSString stringWithFormat:@"%@/decrypted-app.ipa", [self docPath]];
-}
-
 -(NSString *) createIPAFile {
 	NSString *IPAFile = [self IPAPath];
 	NSString *appDir  = [self appPath];
@@ -390,7 +387,7 @@
 		
 		// Rename file
 		NSError * err2;
-		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:[self FinalIPAPath] error:&err2];
+		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:[self ipaName] error:&err2];
 		if(!result)
 			NSLog(@"[dumpDecrypted] error when renaming: %@", err2);
 	}
@@ -402,9 +399,9 @@
 	// Clean up. Leave only the .ipa file.
 	[fm removeItemAtPath:zipDir error:nil];
 
-	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", [self FinalIPAPath]);
+	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", [self ipaName]);
      
-	return [self FinalIPAPath];
+	return [self ipaName];
 }
 
 @end
