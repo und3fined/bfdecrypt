@@ -4,6 +4,7 @@
 	char *filename;
 	char *appDirName;
 	char *appDirPath;
+	char *ipaName;
 }
 
 @property (assign) NSString *appPath;
