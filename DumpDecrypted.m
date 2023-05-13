@@ -387,7 +387,7 @@
 		
 		// Rename file
 		NSError * err2;
-		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:[self ipaName] error:&err2];
+		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:self->ipaName error:&err2];
 		if(!result)
 			NSLog(@"[dumpDecrypted] error when renaming: %@", err2);
 	}
@@ -399,9 +399,9 @@
 	// Clean up. Leave only the .ipa file.
 	[fm removeItemAtPath:zipDir error:nil];
 
-	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", [self ipaName]);
+	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", self->ipaName);
      
-	return [self ipaName];
+	return self->ipaName;
 }
 
 @end
