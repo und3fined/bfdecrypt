@@ -342,6 +342,7 @@
 	NSString *appDir  = [self appPath];
 	NSString *appCopyDir = [NSString stringWithFormat:@"%@/ipa/Payload/%s", [self docPath], self->appDirName];
 	NSString *zipDir = [NSString stringWithFormat:@"%@/ipa", [self docPath]];
+	NSString *ipaName = [NSString stringWithFormat:@"%@", self->ipaName];
 	NSFileManager *fm = [NSFileManager defaultManager];
 	NSError *err = nil;
 
@@ -387,7 +388,7 @@
 		
 		// Rename file
 		NSError * err2;
-		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:self->ipaName error:&err2];
+		BOOL result = [[NSFileManager defaultManager] moveItemAtPath:[self IPAPath] toPath:ipaName error:&err2];
 		if(!result)
 			NSLog(@"[dumpDecrypted] error when renaming: %@", err2);
 	}
@@ -399,9 +400,9 @@
 	// Clean up. Leave only the .ipa file.
 	[fm removeItemAtPath:zipDir error:nil];
 
-	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", self->ipaName);
+	NSLog(@"[dumpDecrypted] ======== Wrote %@ ========", ipaName);
      
-	return self->ipaName;
+	return ipaName;
 }
 
 @end
