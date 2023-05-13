@@ -30,7 +30,7 @@ UIAlertController *errorController = NULL;
 __attribute__ ((constructor)) static void bfinject_rocknroll() {
     NSLog(@"[bfdecrypt] Constructor called");
 
-    NSBundle *mainBundle = [[NSBundle mainBundle]];
+    NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *bundleID = mainBundle.bundleIdentifier;
     NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/dev.und3fy.bfdecrypt_prefs.plist"];
 
